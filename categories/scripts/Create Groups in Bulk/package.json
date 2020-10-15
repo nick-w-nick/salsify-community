@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "axios": "^0.20.0",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "xlsx": "^0.16.8"
   }
 }

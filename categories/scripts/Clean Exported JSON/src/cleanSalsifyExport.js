@@ -1,12 +1,15 @@
 /**
  * Clean/format the JSON exported from a custom channel within Salsify that has been configured to export JSON
+ * 
  * @example
  * const exportedJSON = require('./your-salsify-export.json');
  * const cleanedJSON = cleanSalsifyExport(exportedJSON);
  * console.log(cleanedJSON);
  * 
  * @param {[Object]} productData - The entire JSON array from your custom Salsify channel export
- * @returns {[Object]} A clean array consisting only of the product data within the export, with everything else removed
+ * @returns {[Object]} `[ {...}, ... ]` A clean array consisting only of the core product data within the export
+ * 
+ * Docs: {@link https://github.com/nick-w-nick/salsify-community/tree/master/categories/scripts/Clean%20Exported%20JSON#configuration|github/salsify-community/Clean Exported JSON/#Configuration}
  */
 
 module.exports = cleanSalsifyExport = (productData) => {

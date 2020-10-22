@@ -4,8 +4,6 @@ module.exports = cleanSalsifyExport = (productData) => {
         return obj.products;
     });
     
-    
-    
     const filteredProducts = productsArray.products.flatMap(obj => {
         // // Remove any products that contain a dash "-"
         // if (obj.SKU.includes('-')) {

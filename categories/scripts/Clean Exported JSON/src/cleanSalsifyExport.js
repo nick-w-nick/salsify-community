@@ -29,7 +29,7 @@ module.exports = cleanSalsifyExport = (productData) => {
             if (key.slice(0, 8) !== 'salsify:') {
                 return key;
             }
-        })
+        });
         
         // Create an object for the key: value pairs
         const valueArray = nonSalsify.map(key => {

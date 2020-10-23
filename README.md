@@ -37,10 +37,10 @@ For more information on the markdown syntax and its usage across GitHub, please 
 <sub>[back to top](#table-of-contents)</sub>
 
 ## Folder Structure
-In terms of folder structure, each contribution should stay fairly simplistic without compromising quality and/or information. Firstly, determine the category you will be contributing to by examining the available folder locations in the `categories` folder in the root of this repository.
-> If your contribution is for a category that does not yet exist, please make a separate commit first to add it to the `categories` folder.
+In terms of folder structure, each contribution should stay fairly simplistic without compromising quality and/or information. Firstly, determine the category you will be contributing to by examining the available folder locations in the [categories](/categories) folder in the root of this repository.
+> If your contribution is for a category that does not yet exist, please make a separate commit first to add it to the [categories](/categories) folder.
 
-Next, you will need to create the necessary files and folders that will make up your overall contribution. For a very simplified example of using the `formulas` category, please see the directory tree structure below.
+Next, you will need to create the necessary files and folders that will make up your overall contribution. For a very simplified example of using the [formulas](/categories/formulas) category, please see the directory tree structure below.
 
 ```
 categories
@@ -52,7 +52,7 @@ categories
 
 Currently, the only requirements for a contribution are:
 
-- Choose the correct category location inside of `categories`
+- Choose the correct category location inside of [categories](/categories)
 -  Always include a `README.md` file with an explanation / summary of your contribution
 > The required minimum for a README is a short summary, but the more information the better.
 

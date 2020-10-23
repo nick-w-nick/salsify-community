@@ -46,8 +46,8 @@ Next, you will need to create the necessary files and folders that will make up 
 categories
 ├── formulas
     ├── Example Formula
-	    	└── README.md
-	    	└── exampleFormula.md
+	    └── README.md
+	    └── exampleFormula.md
 ```
 
 Currently, the only requirements for a contribution are:
@@ -101,12 +101,12 @@ The following generic structure should be used for all scripts, regardless of th
 categories
 ├── scripts
     ├── Example Script
-	    	├── example
-						└── example.js
-						└── exampleData.json
-	    	├── src
-						└── exampleScript.js
-				└── README.md
+	    ├── example
+			└── example.js
+			└── exampleData.json
+	    ├── src
+			└── exampleScript.js
+			└── README.md
 ```
 The script should have its own folder created within the [scripts](https://github.com/nick-w-nick/salsify-community/tree/master/categories/scripts) directory.
 
@@ -123,13 +123,13 @@ categories
 ├── scripts
     ├── Example Script
 	    	├── example
-						└── example.js
-						└── exampleData.json
+				└── example.js
+				└── exampleData.json
 	    	├── src
-						└── exampleScript.js
-				└── README.md
-				└── package.json
-				└── package-lock.json
+				└── exampleScript.js
+			└── README.md
+			└── package.json
+			└── package-lock.json
 ```
 
 <sub>[back to top](#table-of-contents)</sub>

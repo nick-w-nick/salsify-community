@@ -9,9 +9,21 @@
 ## Overview
 This repository was created with the intention of centralizing all of the amazing work and innovation that have been developed by the ever-growing community of [Salsify](https://www.salsify.com/) users.
 
+## Table of Contents
+
+- [Overview](#overview)
+- [Contribution](#contribution)
+- [Requirements](#requirements)
+- [Folder Structure](#folder-structure)
+	- [Category-Specific Requirements](#category-specific-requirements)
+    	- [Formulas](#formulas)
+    	- [Scripts](#scripts)
+
 ## Contribution
 Since this is a community-based repository, any and all contributions are immensely appreciated, as they will serve as an extended source of knowledge and solutions for all to use and learn from.
 In order to preseve quality and consistency, there are a few guidelines that would be required for any contributions. Since the overall subject matter of this repository is very broad, the general guidelines will be listed below, along with rulesets for specific types of contributions.
+
+<sub>[back to top](#table-of-contents)</sub>
 
 ## Requirements
 Due to the broad topic of this repository, there aren't many specific overall requirements in place. The main part of each contribution that will remain standard across the repository is the usage of [Markdown](https://www.markdownguide.org/getting-started/), the formatting syntax used to render pages just like this one.
@@ -21,6 +33,8 @@ For more information on the markdown syntax and its usage across GitHub, please 
 > Easy to use GitHub-compatible markdown editor [(StackEdit)](https://stackedit.io/)
 
 > VS Code Extension for writing and previewing markdown [(Markdown All in One)](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one)
+
+<sub>[back to top](#table-of-contents)</sub>
 
 ## Folder Structure
 In terms of folder structure, each contribution should stay fairly simplistic without compromising quality and/or information. Firstly, determine the category you will be contributing to by examining the available folder locations in the `categories` folder in the root of this repository.
@@ -42,9 +56,12 @@ Currently, the only requirements for a contribution are:
 -  Always include a `README.md` file with an explanation / summary of your contribution
 > The required minimum for a README is a short summary, but the more information the better.
 
+<sub>[back to top](#table-of-contents)</sub>
+
 ### Category-Specific Requirements
 
-<h4 style="font-weight: 500;">Formulas</h4>
+<h4 id="formulas" style="font-weight: 500;">Formulas</h4>
+
 For the file containing the formula itself, please set the filetype to `.md`, and the contents of the file should ONLY be a markdown code block with the formula inside. For example:
 
 `└── checkForRed.md`
@@ -75,7 +92,9 @@ Please make sure to properly indent your formula, as well as capitalizing each f
 - `VALUE('Property Name')` ✔️
 - `value('Property Name')` ❌
 
-<h4 style="font-weight: 500;">Scripts</h4>
+<sub>[back to top](#table-of-contents)</sub>
+
+<h4 id="scripts" style="font-weight: 500;">Scripts</h4>
 The following generic structure should be used for all scripts, regardless of the language. If this structure hinders functionality in your contribution, please note your reasoning within the PR so that the requirements can be adjusted to accomodate the addition.
 
 ```
@@ -112,3 +131,5 @@ categories
 				└── package.json
 				└── package-lock.json
 ```
+
+<sub>[back to top](#table-of-contents)</sub>

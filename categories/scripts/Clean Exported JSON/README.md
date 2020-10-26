@@ -67,23 +67,21 @@ After running the script, you should see an output similar to this in your outpu
 As you can see, it has cleared out all of the unnecessary data that Salsify includes by default with custom channel JSON exports.
 
 The only problem that you may notice is that while the data is now cleaned and usable, it does seem to include a specific issue, in this case a product that seems to only have a value for the `SKU` property, but nothing else.
-This is because in the `example JSON` file there were not only regular products, but also their parent items. This may not be the case for you, depending on how you have your variations (if any) structured inside of Salsify.
-
-The nifty thing about the structure of our data inside of Salsify is that all parents follow a specific naming syntax for their SKU, which will *always* include a dash ("-").
-On the opposite side, regular "sellable" variation products are prohibited from containing a dash within their SKU, as it is reserved for parent items only.
+This is because in the [`exampleJSON.json`](example/exampleJSON.json) file there were not only regular products, but also their parent items. This may not be the case for you, depending on how you have your variations (if any) structured inside of Salsify.
 
 Luckily, there is a quick solution provided within the core [`cleanSalsifyExport.js`](src/cleanSalsifyExport.js) script, albeit commented out by default.
 
 ```js
-// Remove any products that contain a dash "-"
-if (obj.SKU.includes('-')) {
+// Remove any parent products
+if (!obj['salsify:parent_id']) {
     return [];
 }
 ```
+The nifty thing about the structure of the export from Salsify is that only regular "sellable" items contain a property in their object named `salsify:parent_id`.
 
-Basically, this code inside of the `.flatMap` will check upon each iteration to see if the current SKU contains a dash or not.
+Basically, this code inside of the `.flatMap` will check upon each iteration to see if the current product contains the `salsify:parent_id` property within the object.
 
-If it does happen to contain a dash, an empty array will be outputted during that iteration, which will then be pruned on return due to the iterations occurring inside of a `.flatMap` which will "flatten" the output, causing any empty or nested values to be joined into a single-dimensional array, instead of a regular `.map` which will not remove any empty/nested values by default.
+If it does not happen to contain this property, an empty array will be outputted during that iteration, which will then be pruned on return due to the iterations occurring inside of a `.flatMap` which will "flatten" the output, causing any empty or nested values to be joined into a single-dimensional array, instead of a regular `.map` which will not remove any empty/nested values by default.
 > [Learn more about array dimensions in JavaScript](https://www.javascripttutorial.net/javascript-multidimensional-array/)
 
 After uncommenting the above code and re-running the script, the output now looks like:
@@ -212,6 +210,8 @@ The value of `Object.keys(obj)` (when using the [exampleJSON](example/exampleJSO
 ]
 ```
 
+> [Learn more about `Object.keys()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/keys)
+
 Now that we have a list of our keys stored in `Object.keys(obj)`, we can chain the `.filter` method onto it so that we can start telling the script which properties to keep based on the conditions provided.
 
 ```js
@@ -261,10 +261,12 @@ In the `valueArray` variable, we are creating a new `.map`, which will iterate t
 
 In this `.map`, we are `return`ing a new object, which contains the key we are iterating on, as well as its original value from the `obj` parameter, which is basically the object from `filteredProducts` that we are currently iterating on within the overall `.map`.
 
+> [Learn more about `Array.map()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+
 When this runs, it will set the property of the new object to the current key, and will set the value to the value of that specific key from within `obj`. For example, if the key we are currently iterating on was `SKU`, the result that is used to retrieve the value would look something like:
 
 ```js
-	return ({ SKU: obj.SKU });
+return ({ SKU: obj.SKU });
 ```
 
 The final result stored inside of `valueArray` after completing an iteration for each of the keys would look something like:
@@ -298,6 +300,8 @@ The end result that is evaluated by `Object.assign()` would look something like:
 ```js
 Object.assign({'Actual Size': "5'3'' x 7'10''"}, {'Primary Color': 'Multi-Color'}, {'Short Size': '5x8'}, {SKU: 'ABC1234 5x8'});
 ```
+
+> [Learn more about `Object.assign()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
 
 Now that all of the code inside iteration is complete, we can simply return our result with:
 ```js

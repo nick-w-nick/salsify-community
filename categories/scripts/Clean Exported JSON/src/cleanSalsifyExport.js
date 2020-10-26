@@ -19,8 +19,8 @@ module.exports = cleanSalsifyExport = (productData) => {
     });
     
     const filteredProducts = productsArray.products.flatMap(obj => {
-        // // Remove any products that contain a dash "-"
-        // if (obj.SKU.includes('-')) {
+        // // Remove any parent products
+        // if (!obj['salsify:parent_id']) {
         //     return [];
         // }
         

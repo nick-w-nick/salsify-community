@@ -1,0 +1,155 @@
+[
+	{
+		"header": {
+			"version": "2",
+			"scope": ["all"]
+		}
+	},
+	{
+		"attributes": [
+			{
+				"salsify:id": "SKU",
+				"salsify:name": "SKU",
+				"salsify:data_type": "string",
+				"salsify:role": "product_id",
+				"salsify:entity_types": ["products"],
+				"salsify:is_facetable": true,
+				"salsify:attribute_group": "example-group",
+				"salsify:position": null,
+				"salsify:help_text": "",
+				"salsify:manage_permissions": null,
+				"salsify:read_permissions": null,
+				"salsify:hidden_permissions": null,
+				"salsify:created_at": "2018-02-15T16:07:34.682Z",
+				"salsify:updated_at": "2019-10-02T14:43:42.594Z",
+				"salsify:type": "property",
+				"salsify:system_id": "example-id"
+			},
+			{
+				"salsify:id": "Short Size",
+				"salsify:name": "Short Size",
+				"salsify:data_type": "string",
+				"salsify:entity_types": ["products"],
+				"salsify:is_facetable": true,
+				"salsify:attribute_group": "Dimensions",
+				"salsify:position": null,
+				"salsify:help_text": "The short size of this product (2x10, 5x8, etc).",
+				"salsify:manage_permissions": null,
+				"salsify:read_permissions": null,
+				"salsify:hidden_permissions": [],
+				"salsify:created_at": "2018-02-15T16:07:34.682Z",
+				"salsify:updated_at": "2019-10-02T14:43:42.589Z",
+				"salsify:type": "property",
+				"salsify:system_id": "example-id"
+			},
+			{
+				"salsify:id": "Primary Color",
+				"salsify:name": "Primary Color",
+				"salsify:data_type": "string",
+				"salsify:entity_types": ["products"],
+				"salsify:is_facetable": true,
+				"salsify:attribute_group": "Construction",
+				"salsify:position": null,
+				"salsify:help_text": "The color that occurs most frequently on the item.",
+				"salsify:manage_permissions": null,
+				"salsify:read_permissions": null,
+				"salsify:hidden_permissions": [],
+				"salsify:created_at": "2018-04-12T16:26:23.733Z",
+				"salsify:updated_at": "2019-10-02T14:43:42.467Z",
+				"salsify:type": "property",
+				"salsify:system_id": "example-id"
+			},
+			{
+				"salsify:id": "Actual Size",
+				"salsify:name": "Actual Size",
+				"salsify:data_type": "string",
+				"salsify:entity_types": [],
+				"salsify:is_facetable": true,
+				"salsify:attribute_group": "Dimensions",
+				"salsify:position": null,
+				"salsify:help_text": "The full size of the product, as computed using the product dimensions.",
+				"salsify:manage_permissions": null,
+				"salsify:read_permissions": null,
+				"salsify:hidden_permissions": null,
+				"salsify:created_at": "2019-09-17T15:37:32.491Z",
+				"salsify:updated_at": "2019-10-11T16:25:03.200Z",
+				"salsify:formula": "example-formula",
+				"salsify:type": "computed_property",
+				"salsify:entity_scope": ["product"],
+				"salsify:system_id": "example-id"
+			}
+		]
+	},
+	{
+		"attribute_values": []
+	},
+	{
+		"digital_assets": []
+	},
+	{
+		"products": [
+			{
+				"salsify:id": "AB12-Parent",
+				"salsify:created_at": "2018-02-16T19:12:10.426Z",
+				"salsify:updated_at": "2020-08-18T13:48:20.384Z",
+				"salsify:version": 31,
+				"salsify:relations_updated_at": "2018-05-07T15:05:01.610Z",
+				"salsify:profile_asset_id": null,
+				"salsify:system_id": "example-id",
+				"SKU": "AB12-Parent",
+				"salsify:relations": [
+					{
+						"relation_type": "Variation",
+						"salsify:target_product_id": "ABC1234 5x8",
+						"salsify:created_at": "2018-05-07T15:05:01.610Z",
+						"salsify:updated_at": "2018-05-07T15:05:01.610Z"
+					}
+				]
+			},
+			{
+				"salsify:id": "ABC1234 5x8",
+				"salsify:created_at": "2018-02-16T17:45:19.688Z",
+				"salsify:updated_at": "2020-10-21T17:16:35.686Z",
+				"salsify:version": 589,
+				"salsify:relations_updated_at": "2018-05-07T15:03:16.759Z",
+				"salsify:profile_asset_id": null,
+				"salsify:parent_id": "ABC12-Parent",
+				"salsify:system_id": "example-id",
+				"Actual Size": "5'3'' x 7'10''",
+				"Primary Color": "Multi-Color",
+				"Short Size": "5x8",
+				"SKU": "ABC1234 5x8",
+				"salsify:relations": [
+					{
+						"relation_type": "Related Products",
+						"salsify:target_product_id": "ABC1234 8x10",
+						"salsify:created_at": "2018-05-07T15:03:16.759Z",
+						"salsify:updated_at": "2018-05-07T15:03:16.759Z"
+					}
+				]
+			},
+			{
+				"salsify:id": "ABC1234 8x10",
+				"salsify:created_at": "2018-02-16T17:45:19.688Z",
+				"salsify:updated_at": "2020-10-21T17:16:35.566Z",
+				"salsify:version": 1322,
+				"salsify:relations_updated_at": "2018-05-07T15:03:16.759Z",
+				"salsify:profile_asset_id": null,
+				"salsify:parent_id": "ABC12-Parent",
+				"salsify:system_id": "example-id",
+				"Actual Size": "7'10'' x 9'10''",
+				"Primary Color": "Multi-Color",
+				"Short Size": "8x10",
+				"SKU": "ABC1234 8x10",
+				"salsify:relations": [
+					{
+						"relation_type": "Related Products",
+						"salsify:target_product_id": "ABC1234 5x8",
+						"salsify:created_at": "2018-05-07T15:03:16.759Z",
+						"salsify:updated_at": "2018-05-07T15:03:16.759Z"
+					}
+				]
+			}
+		]
+	}
+]

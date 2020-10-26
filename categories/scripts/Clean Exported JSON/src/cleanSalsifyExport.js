@@ -37,7 +37,7 @@ module.exports = cleanSalsifyExport = (productData) => {
         });
         
         // Merge the new array of objects together
-        return Object.assign({}, ...valueArray);
+        return Object.assign(...valueArray);
     });
     
     return filteredProducts;

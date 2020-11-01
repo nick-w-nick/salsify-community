@@ -60,7 +60,7 @@ Currently, the only requirements for a contribution are:
 
 ### Category-Specific Requirements
 
-<h4 id="formulas" style="font-weight: 500;">Formulas</h4>
+<h4 id="formulas" style="font-weight: 500;"><img align="center" src="assets/readme/formulas-icon.png">&nbsp;&nbsp;Formulas</img></h4>
 
 For the file containing the formula itself, please set the filetype to `.md`, and the contents of the file should ONLY be a markdown code block with the formula inside. For example:
 
@@ -94,7 +94,7 @@ Please make sure to properly indent your formula, as well as capitalizing each f
 
 <sub>[back to top](#table-of-contents)</sub>
 
-<h4 id="scripts" style="font-weight: 500;">Scripts</h4>
+<h4 id="scripts" style="font-weight: 500;"><img align="center" src="assets/readme/scripts-icon.png">&nbsp;&nbsp;Scripts</img></h4>
 The following generic structure should be used for all scripts, regardless of the language. If this structure hinders functionality in your contribution, please note your reasoning within the PR so that the requirements can be adjusted to accomodate the addition.
 
 ```

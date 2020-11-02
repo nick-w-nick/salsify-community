@@ -31,7 +31,7 @@ To ensure NodeJS and npm are properly installed, run `node -v` and `npm -v` in y
 
 If they don't throw an error and each output something that looks like a version number (`v00.00.0`), that means they are correctly installed and accessible via terminal.
 
-If you are receiving an error after running either of these commands, you will want to ensure they are installed correctly and the executables have been added as environment variables on your system. A common issue that new users of NodeJS run into would be that it isn't added to the evironment variables properly and cannot be used via the command line. If you've just installed NodeJS, make sure to restart your system for the enviroment variable updates to take effect.
+If you are receiving an error after running either of these commands, you will want to ensure they are installed correctly and the executables have been added as environment variables on your system. A common issue that new users of NodeJS run into would be that it isn't added to the environment variables properly and cannot be used via the command line. If you've just installed NodeJS, make sure to restart your system for the environment variable updates to take effect.
 
 <h4 id="installing-dependencies-js" style="font-weight: 500;">Installing Dependencies</h4>
 When a script contains dependencies, that means it relies on third-party modules and packages to properly function.
@@ -46,7 +46,7 @@ A generic `package.json` is structured similarly to the below example:
 {
   "name": "salsify-community",
   "version": "1.0.0",
-  "description": "Centralizing all of the amazing work and innovation that have been developed by the ever-growing community of Salsify users.",
+  "description": "An open-source location for any and all things Salsify.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

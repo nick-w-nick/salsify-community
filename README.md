@@ -21,7 +21,7 @@ This repository was created with the intention of centralizing all of the amazin
 
 ## Contribution
 Since this is a community-based repository, any and all contributions are immensely appreciated, as they will serve as an extended source of knowledge and solutions for all to use and learn from.
-In order to preseve quality and consistency, there are a few guidelines that would be required for any contributions. Since the overall subject matter of this repository is very broad, the general guidelines will be listed below, along with rulesets for specific types of contributions.
+In order to preserve quality and consistency, there are a few guidelines that would be required for any contributions. Since the overall subject matter of this repository is very broad, the general guidelines will be listed below, along with rulesets for specific types of contributions.
 
 <sub>[back to top](#table-of-contents)</sub>
 
@@ -95,7 +95,7 @@ Please make sure to properly indent your formula, as well as capitalizing each f
 <sub>[back to top](#table-of-contents)</sub>
 
 <h4 id="scripts" style="font-weight: 500;"><img align="center" src="assets/readme/scripts-icon.png">&nbsp;&nbsp;Scripts</img></h4>
-The following generic structure should be used for all scripts, regardless of the language. If this structure hinders functionality in your contribution, please note your reasoning within the PR so that the requirements can be adjusted to accomodate the addition.
+The following generic structure should be used for all scripts, regardless of the language. If this structure hinders functionality in your contribution, please note your reasoning within the PR so that the requirements can be adjusted to accommodate the addition.
 
 ```
 categories

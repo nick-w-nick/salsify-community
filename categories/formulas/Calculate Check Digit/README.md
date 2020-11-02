@@ -94,7 +94,7 @@ Example:
 ```
 
 The reason we are running this even/odd condition is due to the way the check digit calculation is performed.
-If we go back to the [How To Calculate a Check Digit Manually](https://www.gs1.org/services/how-calculate-check-digit-manually) page, you can see the inital part of the calculation involves an alternating pattern of multiplying each digit in the original UPC by 3 and 1 respectively.
+If we go back to the [How To Calculate a Check Digit Manually](https://www.gs1.org/services/how-calculate-check-digit-manually) page, you can see the initial part of the calculation involves an alternating pattern of multiplying each digit in the original UPC by 3 and 1 respectively.
 
 Here is a recreation of the patterned model used, slightly modified for readability.
 

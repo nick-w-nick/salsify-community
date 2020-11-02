@@ -280,7 +280,7 @@ The final result stored inside of `valueArray` after completing an iteration for
 ]
 ```
 
-Now that we have isolated the product data from the original export, filtered out all Salsify interal properties, associated the keys we want to keep with their original values, we are able to move onto the final step, which consists of formatting what we currently have into a format that will be clean and easy to use.
+Now that we have isolated the product data from the original export, filtered out all Salsify internal properties, associated the keys we want to keep with their original values, we are able to move onto the final step, which consists of formatting what we currently have into a format that will be clean and easy to use.
 
 Since we currently have an array of objects, each of which contain a `key:value` pair, we need to merge all of the objects together to create a single object which contains each of the properties and their values.
 

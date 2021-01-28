@@ -1,10 +1,8 @@
 <p align="center">
-	<img height="300" src="/assets/readme/salsify-logo.png">
+	<img height="500" src="assets/readme/main-banner.jpg">
 </p>
 
 <br>
-
-<h1 align="center">Salsify Community</h1>
 
 ## Overview
 This repository was created with the intention of centralizing all of the amazing work and innovation that have been developed by the ever-growing community of [Salsify](https://www.salsify.com/) users.

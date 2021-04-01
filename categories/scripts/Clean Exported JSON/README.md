@@ -24,7 +24,7 @@ In order to configure this script, you only need to modify two sections of the s
 - The `input` filename
 - The `output` filename
 
-To configure the `input` file, drop your JSON file into the directory your are working inside of, which in this case for us, is within the [example](example) directory.
+To configure the `input` file, drop your JSON file into the directory you are working inside of, which in this case for us, is within the [example](example) directory.
 
 Once your file has been added to the local directory, simply replace `exampleJSON.json` with the name of your exported JSON file.
 
@@ -103,7 +103,7 @@ After uncommenting the above code and re-running the script, the output now look
 ]
 ```
 
-As you can see, the parent item which contained a dash in its SKU has been pruned upon being returned from the `.flatMap` inside of [`cleanSalsifyExport.js`](src/cleanSalsifyExport.js), since we told it to output an empty array during that iteration if the SKU contains a dash.
+As you can see, the parent items have been pruned upon being returned from the `.flatMap` inside of [`cleanSalsifyExport.js`](src/cleanSalsifyExport.js), since we told it to output an empty array during that iteration if the product contains a `salsify:parent_id` property.
 
 ## Explanation
 This script simply takes an input of JSON which has been exported from a custom channel within Salsify and removes the unnecessary bits and outputs the nested product data with internal Salsify fields removed.

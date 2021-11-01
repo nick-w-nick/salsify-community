@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Salsify  Dark Mode
-@version     1.0.2
+@version     1.0.3
 @description Salsify Dark Mode
 @namespace   nick-w-nick
 @author      nick-w-nick
@@ -343,6 +343,10 @@
     .backbone-wrapper-view .title, [class*="_title"], [class*="_label-text"] {
         color: #5ec9e2;
         text-shadow: none;
+    }
+    
+    [class*="_body_"] {
+        border: transparent;
     }
     
     /* Stats Page */

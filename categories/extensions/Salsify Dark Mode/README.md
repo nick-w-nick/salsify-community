@@ -2,7 +2,7 @@
 
 
 <p align="center">
-    <img src="wiki-dark-mode-1.png" style="max-width:100%;"></img>
+    <img src="salsify-dark-mode-1.png" style="max-width:100%;"></img>
 </p>
 
 #

@@ -1,6 +1,6 @@
 /* ==UserStyle==
 @name        Salsify  Dark Mode
-@version     1.0.0
+@version     1.0.1
 @description Salsify Dark Mode
 @namespace   nick-w-nick
 @author      nick-w-nick
@@ -17,7 +17,7 @@
     
     /* ----------------- Inputs ----------------- */
     
-    input.backbone-input, [class*="_search"], [class*="_search-box"], .index-view-search-control{
+    input.backbone-input, [class*="_search"], [class*="_search-box"], .index-view-search-control, .field {
         background-color: #0a1a1fa1 !important;
         border: #0e242b !important;
         color: #4EC0DF !important;
@@ -48,6 +48,10 @@
         margin-right: 10px;
     }
     
+    .auth-form {
+        color: #fff;
+    }
+    
     /* ----------------- Buttons ----------------- */
     
     /* Primary Button */
@@ -64,7 +68,7 @@
     }
     
     /* Secondary Button */
-    [class*="_secondary_salsify"] {
+    [class*="_secondary_"] {
         background-color: #1a3e4a !important;
         color: #4EC0DF;
         font-weight: 400;
@@ -74,12 +78,12 @@
         transition: background-color .2s linear;
     }
     
-    [class*="_secondary_salsify"]:hover {
+    [class*="_secondary_"]:hover {
         background-color: #14343e !important;
     }
     
     /* Notification Box */
-    [class*="_notification_salsify"] {
+    [class*="_notification"] {
         background-color: #1a3e4a !important;
         color: #d3d9dd;
     }
@@ -154,7 +158,7 @@
         color: #fff;
     }
     
-    [class*="_header"], [class*="_content"]:not([data-role="menu-item-content"]), [class*="_thumbnail"] {
+    [class*="_header"]:not([class*="_title_"]), [class*="_content"]:not([data-role="menu-item-content"]), [class*="_thumbnail"] {
         text-shadow: none;
         color: #fff;
         background-color: #1a3e4a !important;
@@ -164,7 +168,11 @@
         padding-right: 10px;
     }
     
-    [class*="_header"]:hover {
+    [class*="_items_"] {
+        background: transparent;
+    }
+    
+    [class*="_header"]:not([class*="_title_"]):hover {
         text-shadow: none;
         color: #fff;
         background-color: #1a3e4a;
@@ -267,5 +275,9 @@
     .backbone-wrapper-view .title, [class*="_title"], [class*="_label-text"] {
         color: #5ec9e2;
         text-shadow: none;
+    }
+    
+    [class*="_stat-block"], [class*="_link-title"], [class*="_label"], [class*="_card-header"], [class*="_table-header"] {
+        color: #fff;
     }
 }
